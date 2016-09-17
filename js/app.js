@@ -1,0 +1,10 @@
+angular.module('DutchITRecruitment',
+    [
+        'siteHeader',
+        'siteMotto',
+        'roles',
+        'companyInfo',
+        'socialMedia',
+        'siteFooter'
+    ]
+);

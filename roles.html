@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" dir="ltr" lang="en-gb">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>DutchITRecruitment</title>
+        <link href="./img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/theme.css" type="text/css">
+        <!--[if lt IE 9]> <script src="/media/jui/js/html5.js"></script> <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/components/header.js"></script>
+        <script src="js/components/motto.js"></script>
+        <script src="js/components/roles.js"></script>
+        <script src="js/components/company.js"></script>
+        <script src="js/components/socialmedia.js"></script>
+        <script src="js/components/footer.js"></script>
+    </head>
+
+    <body ng-app="DutchITRecruitment">
+
+        <div class="mm-page">
+            <site-header></site-header>
+
+            <site-motto></site-motto>
+
+            <div id="content" role="main">
+
+                <div name="recruitment" class="odd">
+                    <div class="section-header">
+                        <h1>Recruitment</h1>
+                    </div>
+                    <p>We strive to match developers who match the companiy and a company who matches the developer.
+                    </p>
+                    <p>
+                        Our focus is connecting motivated and professional iOS, Android and Java developers with innovative companies within the Netherlands.
+                    </p>
+                    <p>
+                        The professionals we work with are not only locaed in The Netherlands but in many countries abroad.
+                    </p>
+                </div>
+
+                <div name="relocation">
+                    <div class="section-header">
+                        <h1>Relocation</h1>
+                    </div>
+                    <p>We know its not easy to make the first move to relocate and work in a new country. You probably have to deal enough with closure in your current place. Thats why we offer relocation services, which include visa request, finding a place to live and arrange 30% ruling.
+                    </p>
+                    <p><strong>Paper work</strong>:Once you arrive you probabaly wonder how and when the rest of the paperwork needs to be done. We can help you arrange all the necessary paperwork and/or help you understand the paperwork you receive from different instance. 
+                    </p>
+                </div>
+
+                <div name="integration" class="odd">
+                    <div class="section-header">
+                        <h1>Integration</h1>
+                    </div>
+                    <p>Customs differ for one country to the next. From dealing with "Dutch directness" to the less known quirks of communication, we can guide you through new ways of interacting.
+                    </p>
+                </div>
+
+                <div name="family">
+                    <div class="section-header">
+                        <h1>Family
+                            <small class="light">naturalization</small>
+                        </h1>
+                    </div>
+                    <p>If you will be accompanied by family, we will help you find kindergardens, school and activities for all members.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <social-media></social-media>
+
+        <site-footer></site-footer>
+
+        <div id="mm-blocker"></div>
+
+    </body>
+</html>
