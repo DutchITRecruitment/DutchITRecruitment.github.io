@@ -4,14 +4,10 @@ angular.
 module('roles').
 component('roles', {
     templateUrl: "js/components/roles.template.html",
-    controller: ['$http', PhoneListController]
+    controller: ['$http', RolesController]
 });
 
-function PhoneListController($http) {
+function RolesController($http) {
     var self = this;
-    self.orderProp = 'age';
-
-    // $http.get('phones/phones.json').then(function(response) {
-    //     self.phones = response.data;
-    // });
+    self.showSection = 0;
 }

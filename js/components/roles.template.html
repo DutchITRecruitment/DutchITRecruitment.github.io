@@ -11,41 +11,85 @@
             </div>
             <p>&nbsp;</p>
 
-            <div class="divided">
-                <div class="customdivided first">
+            <div class="divided" ng-if="$ctrl.showSection == 0">
+                <div class="customdivided first"  ng-click="$ctrl.showSection = 1;">
                     <img src="/img/recruitment.png" class="img-circle bordered" width="75px" height="75px"/>
                     <a class="more-link" href="roles.html#recruitment">
                         <h3 class="text-center">Recruitment</h3>
                     </a>
-                    <!-- <p>
-                        <strong>
-                                Read
-                            </strong>
-                            More
-                    </p> -->
+                    <!-- <p> <strong> Read </strong> More </p> -->
                 </div>
 
-                <div class="customdivided">
+                <div class="customdivided"  ng-click="$ctrl.showSection = 2;">
                     <img src="/img/relocation.png" class="img-circle bordered"/>
                     <a class="more-link" href="roles.html#relocation">
                         <h3 class="text-center">Relocation</h3>
                     </a>
                 </div>
 
-                <div class="customdivided">
+                <div class="customdivided"  ng-click="$ctrl.showSection = 3">
                     <img src="/img/paperwork.png" class="img-circle bordered" width="75px" height="75px"/>
                     <a class="more-link" href="roles.html#integration">
-                        <h3 class="text-center">Bureaucratic</br>Help</h3>
+                        <h3 class="text-center">Bureaucratic Help</h3>
+                    </a>
+                </div>
+
+                <div class="customdivided"  ng-click="$ctrl.showSection = 4">
+                    <img src="/img/family.png" class="img-circle bordered" width="75px" height="75px"/>
+                    <a class="more-link" href="roles.html#family">
+                        <h3 class="text-center">Family matters</h3>
                 </a>
+                </div>
             </div>
 
-            <div class="customdivided">
-                <img src="/img/family.png" class="img-circle bordered" width="75px" height="75px"/>
-                <a class="more-link" href="roles.html#family">
-                    <h3 class="text-center">Family</br>matters</h3>
-            </a>
+            <div ng-if="$ctrl.showSection == 1" ng-click="$ctrl.showSection = 0;">
+                <div class="customdivided first"  >
+                    <img src="/img/recruitment.png" class="img-circle bordered" width="75px" height="75px"/>
+                    <a class="more-link" href="roles.html#recruitment">
+                        <h3 class="text-center">Recruitment</h3>
+                    </a>
+                </div>
+                <div class="customdivided">
+                     text here
+                </div>
+            </div>
+
+            <div ng-if="$ctrl.showSection == 2" ng-click="$ctrl.showSection = 0;">
+                <div class="customdivided first"  >
+                    <img src="/img/recruitment.png" class="img-circle bordered" width="75px" height="75px"/>
+                    <a class="more-link" href="roles.html#recruitment">
+                        <h3 class="text-center">Relocation</h3>
+                    </a>
+                </div>
+                <div class="customdivided">
+                     text here
+                </div>
+            </div>
+
+            <div ng-if="$ctrl.showSection == 3" ng-click="$ctrl.showSection = 0;">
+                <div class="customdivided first"  >
+                    <img src="/img/recruitment.png" class="img-circle bordered" width="75px" height="75px"/>
+                    <a class="more-link" href="roles.html#recruitment">
+                        <h3 class="text-center">Bureaucratic Help</h3>
+                    </a>
+                </div>
+                <div class="customdivided">
+                     text here
+                </div>
+            </div>
+
+            <div ng-if="$ctrl.showSection == 4" ng-click="$ctrl.showSection = 0;">
+                <div class="customdivided first"  >
+                    <img src="/img/recruitment.png" class="img-circle bordered" width="75px" height="75px"/>
+                    <a class="more-link" href="roles.html#recruitment">
+                        <h3 class="text-center">Family matters</h3>
+                    </a>
+                </div>
+                <div class="customdivided">
+                     text here
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
-</div>
 </section>
