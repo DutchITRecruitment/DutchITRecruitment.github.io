@@ -702,12 +702,13 @@ ul.nav.menu {
 
 .motto {
     padding-left: 40px;
-    background-image: url("../img/path.jpeg");
+    background-image: url("../img/path.png");
+    background-repeat: repeat-y;
     color: #FFF;
     /*-webkit-text-stroke: 1px black;*/
 }
 
-div.motto > h1 {
+div.motto> h1 {
     padding: 40px;
     color: #ccc;
 }
@@ -730,7 +731,7 @@ img {
     /* Chrome 19+ & Safari 6+ */
 }
 
-img.bordered{
+img.bordered {
     border: 2px solid #808000;
 }
 
@@ -748,4 +749,9 @@ img:hover {
 
 #fb:hover {
     background-image: url('../img/socialMedia/fbhover.png');
+}
+
+div.mylivechat_collapsed, div.mylivechat_expanded, button.mylivechat_offline_submit_button {
+    background-color: #808000 !important;
+    border: #808080 !important;
 }
