@@ -715,12 +715,21 @@ div.motto> h1 {
 
 .divided {
     text-align: center;
+    min-height: 175px;
 }
 
 .customdivided {
     display: inline-block;
     vertical-align: text-top;
     max-width: 22%;
+    padding: 10px;
+}
+
+.roleoverview {
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: left;
+    max-width: 66%;
     padding: 10px;
 }
 
@@ -754,4 +763,8 @@ img:hover {
 div.mylivechat_collapsed, div.mylivechat_expanded, button.mylivechat_offline_submit_button {
     background-color: #808000 !important;
     border: #808080 !important;
+}
+
+.lefttext {
+    text-align: left;
 }
