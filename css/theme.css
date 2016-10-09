@@ -701,10 +701,10 @@ ul.nav.menu {
 }
 
 .motto {
-    padding-left: 40px;
     background-image: url("../img/path.png");
     background-repeat: repeat-y;
     color: #FFF;
+    text-align: center;
     /*-webkit-text-stroke: 1px black;*/
 }
 

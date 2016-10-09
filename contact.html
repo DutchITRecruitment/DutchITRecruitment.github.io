@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>DutchITRecruitment</title>
+        <title>DITRecruitment</title>
         <link href="./img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/theme.css" type="text/css">
@@ -20,7 +20,7 @@
         <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=35091111"></script>
     </head>
 
-    <body ng-app="DutchITRecruitment">
+    <body ng-app="DITRecruitment">
 
         <div class="mm-page">
             <site-header></site-header>
@@ -43,6 +43,66 @@
                     width="400"
                     height="300"
                     allowfullscreen></iframe>
+            </div>
+
+            <div class="customdivided" style="margin-left: 20px">
+
+                <form id="contact-form" action="/link-5" method="post" class="form-validate form-horizontal well">
+                    <fieldset>
+                        <legend>Send an Email</legend>
+                        <div class="control-group">
+                            <div class="control-label">
+                                <span class="spacer">
+                                    <span class="before"></span>
+                                    <span class="text">
+                                        <label id="jform_spacer-lbl" class="">
+                                            <strong class="red">*</strong>
+                                            Required field</label>
+                                    </span>
+                                    <span class="after"></span>
+                                </span>
+                            </div>
+                            <div class="controls"></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label">
+                                <label data-original-title="Name" id="jform_contact_name-lbl" for="jform_contact_name" class="hasPopover required" title="" data-content="Your name.">
+                                    Name<span class="star">&nbsp;*</span>
+                                </label>
+                            </div>
+                            <div class="controls"><input name="jform[contact_name]" id="jform_contact_name" value="" class="required" size="30" required="required" aria-required="true" type="text"></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label">
+                                <label data-original-title="Subject" id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="hasPopover required" title="" data-content="Enter the subject of your message here.">
+                                    Subject<span class="star">&nbsp;*</span>
+                                </label>
+                            </div>
+                            <div class="controls"><input name="jform[contact_subject]" id="jform_contact_emailmsg" value="" class="required" size="60" required="required" aria-required="true" type="text"></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label">
+                                <label data-original-title="Message" id="jform_contact_message-lbl" for="jform_contact_message" class="hasPopover required" title="" data-content="Enter your message here.">
+                                    Message<span class="star">&nbsp;*</span>
+                                </label>
+                            </div>
+                            <div class="controls">
+                                <textarea name="jform[contact_message]" id="jform_contact_message" cols="50" rows="10" class="required" required="required" aria-required="true"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button class="btn btn-primary validate" type="submit">Send Email</button>
+                            <input name="option" value="com_contact" type="hidden">
+                            <input name="task" value="contact.submit" type="hidden">
+                            <input name="return" value="" type="hidden">
+                            <input name="id" value="1:contact-form" type="hidden">
+                            <input name="09d23a59ff350908fcca5b2173db8b6b" value="1" type="hidden">
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </div>
 

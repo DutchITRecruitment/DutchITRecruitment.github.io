@@ -1,4 +1,4 @@
-angular.module('DutchITRecruitment',
+angular.module('DITRecruitment',
     [
         'siteHeader',
         'siteMotto',
