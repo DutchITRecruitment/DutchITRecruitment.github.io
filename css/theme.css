@@ -734,7 +734,7 @@ div.motto> h1 {
 }
 
 img {
-    filter: gray;
+    filter: grayscale(100%);
     /* IE6-9 */
     -webkit-filter: grayscale(100%);
     /* Chrome 19+ & Safari 6+ */
