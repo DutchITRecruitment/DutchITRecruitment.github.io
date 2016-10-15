@@ -34,28 +34,20 @@
             <div class="split">
                 <div class="section-header">
                     <h3>Location</h3>
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
                     <div style='overflow:hidden;height:350px;width:350px;'>
-                        <div id='gmap_canvas' style='height:350px;width:350px;'></div>
-                        <style>
-                            #gmap_canvas img {
-                                max-width: none!important;
-                                background: none!important;
-                            }
-
-                        </style>
+                        <div id='map' style='height:350px;width:350px;'></div>
                     </div>
                     <script type='text/javascript'>
-                        function init_map() {
+                        function initMap() {
                             var myOptions = {
                                 zoom: 12,
                                 center: new google.maps.LatLng(51.9244201, 4.477732500000002),
                                 mapTypeId: google.maps.MapTypeId.ROADMAP
                             };
-                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            map = new google.maps.Map(document.getElementById('map'), myOptions);
                         }
-                        google.maps.event.addDomListener(window, 'load', init_map);
                     </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhualRw1MWsmuTJZotZsl1Wt1mqTbB2Pk&callback=initMap" async defer></script>
                 </div>
             </div>
             <div class="split">
