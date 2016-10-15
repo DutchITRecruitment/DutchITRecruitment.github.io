@@ -31,78 +31,53 @@
         </div>
 
         <div class="divided">
-            <div class="section-header">
-                <h1>Where
-                    <small class="light">we are located</small>
-                </h1>
+            <div class="split">
+                <div class="section-header">
+                    <h3>Location</h3>
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:350px;width:350px;'>
+                        <div id='gmap_canvas' style='height:350px;width:350px;'></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none!important;
+                                background: none!important;
+                            }
+
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 12,
+                                center: new google.maps.LatLng(51.9244201, 4.477732500000002),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
             </div>
-
-            <div class="customdivided">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78730.34383214904!2d4.420358703495639!3d51.92805727587531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7605f54c47d%3A0x5229bbac955e4b85!2sRotterdam!5e0!3m2!1sen!2snl!4v1475953826618"
-                    width="400"
-                    height="300"
-                    allowfullscreen></iframe>
-            </div>
-
-            <div class="customdivided" style="margin-left: 20px">
-
-                <form id="contact-form" action="/link-5" method="post" class="form-validate form-horizontal well">
-                    <fieldset>
-                        <legend>Send an Email</legend>
-                        <div class="control-group">
-                            <div class="control-label">
-                                <span class="spacer">
-                                    <span class="before"></span>
-                                    <span class="text">
-                                        <label id="jform_spacer-lbl" class="">
-                                            <strong class="red">*</strong>
-                                            Required field</label>
-                                    </span>
-                                    <span class="after"></span>
-                                </span>
-                            </div>
-                            <div class="controls"></div>
+            <div class="split">
+                <div class="section-header">
+                    <h3>Contact
+                        <small class="light">us</small>
+                    </h3>
+                    <div>
+                        <a href="mailto:info@ditrecruitment.com" target="_top">info@ditrecruitment.com</a>
+                    </div>
+                    <div id="offlinecontact">
+                        <div>
+                            <input name="email" maxlength="200" size="20" placeholder="E-mail">
                         </div>
-                        <div class="control-group">
-                            <div class="control-label">
-                                <label data-original-title="Name" id="jform_contact_name-lbl" for="jform_contact_name" class="hasPopover required" title="" data-content="Your name.">
-                                    Name<span class="star">&nbsp;*</span>
-                                </label>
-                            </div>
-                            <div class="controls"><input name="jform[contact_name]" id="jform_contact_name" value="" class="required" size="30" required="required" aria-required="true" type="text"></div>
+                        <div>
+                            <input name="subject" maxlength="200" size="20" placeholder="Topic">
                         </div>
-                        <div class="control-group">
-                            <div class="control-label">
-                                <label data-original-title="Subject" id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="hasPopover required" title="" data-content="Enter the subject of your message here.">
-                                    Subject<span class="star">&nbsp;*</span>
-                                </label>
-                            </div>
-                            <div class="controls"><input name="jform[contact_subject]" id="jform_contact_emailmsg" value="" class="required" size="60" required="required" aria-required="true" type="text"></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="control-label">
-                                <label data-original-title="Message" id="jform_contact_message-lbl" for="jform_contact_message" class="hasPopover required" title="" data-content="Enter your message here.">
-                                    Message<span class="star">&nbsp;*</span>
-                                </label>
-                            </div>
-                            <div class="controls">
-                                <textarea name="jform[contact_message]" id="jform_contact_message" cols="50" rows="10" class="required" required="required" aria-required="true"></textarea>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="control-group">
-                        <div class="controls">
-                            <button class="btn btn-primary validate" type="submit">Send Email</button>
-                            <input name="option" value="com_contact" type="hidden">
-                            <input name="task" value="contact.submit" type="hidden">
-                            <input name="return" value="" type="hidden">
-                            <input name="id" value="1:contact-form" type="hidden">
-                            <input name="09d23a59ff350908fcca5b2173db8b6b" value="1" type="hidden">
+                        <div>
+                            <input name="content" maxlength="200" size="20" placeholder="The extra details...">
                         </div>
                     </div>
-                </form>
-
+                </div>
             </div>
         </div>
 

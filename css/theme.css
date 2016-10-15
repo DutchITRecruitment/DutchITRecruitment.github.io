@@ -725,6 +725,13 @@ div.motto> h1 {
     padding: 10px;
 }
 
+.split {
+    display: inline-block;
+    vertical-align: text-top;
+    max-width: 45%;
+    padding: 10px;
+}
+
 .roleoverview {
     display: inline-block;
     vertical-align: text-top;
