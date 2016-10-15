@@ -756,6 +756,10 @@ div.mylivechat_collapsed, div.mylivechat_expanded, button.mylivechat_offline_sub
     border: #808080 !important;
 }
 
+div.mylivechat_container {
+    border-color: #808080 !important;
+}
+
 .lefttext {
     text-align: left;
 }
