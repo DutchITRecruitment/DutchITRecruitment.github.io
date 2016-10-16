@@ -20,19 +20,16 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-weight: 400;
-    text-transform: uppercase;
     margin: 0;
 }
 
 h1 small {
-    text-transform: none;
     color: #444;
 }
 
 h1 {
     font-size: 36px;
     line-height: 48px;
-    margin-bottom: 24px;
 }
 
 h1 small {
@@ -66,7 +63,6 @@ h5 {
 h6 {
     font-size: 11px;
     color: #999;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -284,7 +280,6 @@ form#contact-form .form-actions {
 /* menu bar */
 
 #masthead .nav> li> a {
-    text-transform: uppercase;
     text-shadow: none;
     font-style: normal;
 }
@@ -410,7 +405,6 @@ section.boxes {
 
 .section-header h1 small {
     font-size: inherit;
-    text-transform: uppercase;
 }
 
 .section-header:before, .section-header:after {
@@ -691,10 +685,10 @@ ul.nav.menu {
     color: #FFF;
     text-align: center;
     /*-webkit-text-stroke: 1px black;*/
+    margin-bottom: 25px;
 }
 
 div.motto> h1 {
-    padding: 40px;
     color: #ccc;
 }
 
