@@ -226,7 +226,8 @@ main#content.span9 {
 }
 
 input, textarea {
-    width: 90%
+    width: 90%;
+    margin: 5px;
 }
 
 textarea {
